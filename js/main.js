@@ -9,3 +9,5 @@ window.addEventListener('scroll', function () {
       header.classList.remove('white'); 
   }
 });
+
+AOS.init();

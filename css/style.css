@@ -8,12 +8,14 @@
 	font-display: swap;
 }
 
-body{
+*, body{
     font-family: 'Montserrat', sans-serif;
+		margin: 0;
+		padding: 0;
 }
 .title{
 	font-family: 'Brittany';
-	font-size: 5rem;
+	font-size: 4.5rem;
 }
 .subtitle{
 	font-weight: 600;
@@ -79,4 +81,63 @@ header.white .redes .icon{
 	padding: .5rem 1rem;
 	text-align: center;
 	margin-right: 1rem;
+}
+
+.entire-title span{
+	font-size: 2rem;
+}
+
+.menu{
+	padding: 0;
+}
+
+.menu li{
+	list-style: none;
+	padding: 0.5rem;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: inherit;
+	transition: all ease-in-out .5s;
+}
+
+.menu li a:hover{
+	color: #2b578e;
+	font-weight: 600;
+}
+.menu li a img{
+	margin-right: 0.5rem;
+}
+
+.volver{
+	text-decoration: none;
+	color: #4c4c4c;
+}
+.volver img{
+	width: 1.1rem;
+}
+
+.nota{
+	font-size: .8rem;
+}
+.bg{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.pr{
+	background-image: url('../img/background/bg1.png');
+}
+
+footer{
+	background-color: #2b578e;
+	color: white;
+	font-size: .7rem;
+	text-align: center;
+}
+footer span{
+	letter-spacing: 0.8rem;
+	font-size: 1rem;
+	display: block;
 }
