@@ -1,3 +1,82 @@
-.titulo{
-    color: red !important;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
+
+@font-face {
+	font-family: 'Brittany';
+	src: url('../assets/fonts/BrittanySignature.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+	font-family: 'Brittany';
+	font-size: 5rem;
+}
+.subtitle{
+	font-weight: 600;
+	background-image: url('../img/tribal.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 2.3rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+header.white{
+    background-color: rgba(255, 255, 255, 0.837);
+}
+
+header .logo{
+    width: 9rem;
+}
+
+header .redes span{
+	font-size: .9rem;
+	margin-right: 0.3rem;
+}
+
+header .redes .icon{
+	height: 1.5rem;
+}
+
+header.white .logo{
+	width: 6rem;
+}
+
+header.white .redes span{
+ font-size: .8rem;
+}
+
+header.white .redes .icon{
+	height: 1.3rem;
+}
+
+.seccion .text li{
+	counter-increment: my-counter;
+	list-style: none;
+	display: flex;
+	align-items: start;
+}
+
+.seccion .text li::before {
+	content: counter(my-counter); /* Utiliza el contador para el contenido del número */
+	background-color: #2b578e; /* Fondo del número */
+	color: white; /* Color del número */
+	font-size: 1.3rem; /* Tamaño de fuente del número */
+	font-family: 'Brittany'; /* Fuente del número */
+	padding: .5rem 1rem;
+	text-align: center;
+	margin-right: 1rem;
 }
